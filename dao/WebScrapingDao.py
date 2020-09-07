@@ -6,7 +6,7 @@ class WebScrapingDao:
     def connection(self):
         myclient = pymongo.MongoClient("mongodb://localhost:27017/")
         mydb = myclient["MegaSenna"] # Banco de Dados
-        mycol = mydb["historico_jogos"]       # Collection
+        mycol = mydb["dezenas_sorteadas"]       # Collection
         return mycol
 
     def salvarMegaSenna(self, data):        
