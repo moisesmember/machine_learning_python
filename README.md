@@ -4,6 +4,7 @@
 ``` pip install beautifulsoup4 ```
 ``` pip install requests ```
 ``` pip install pymongo ```
+``` pip install pandas ```
 
 <p>Foi realizado a criação de um ambiente de virtualização em Python para execução do projeto</p>
 <ul>

@@ -6,7 +6,7 @@ class WebScrapingDao:
     def connection(self):
         myclient = pymongo.MongoClient("mongodb://localhost:27017/")
         mydb = myclient["MegaSenna"] # Banco de Dados
-        mycol = mydb["dezenas_sorteadas"]       # Collection
+        mycol = mydb["historicoJogos"]       # Collection
         return mycol
 
     def salvarMegaSenna(self, data):        
@@ -22,7 +22,7 @@ class WebScrapingDao:
         connected = db_megasenna.connection() # Realiza a conexão com o MongoDB
         return connected.find({"data_sorteio":data_sorteio})
 
-    def listAllMegaSenna():
+    def listAllMegaSenna(self):
         db_megasenna = WebScrapingDao() # Instância Objeto da Classe
         connected = db_megasenna.connection() # Realiza a conexão com o MongoDB
         return connected.find({})
