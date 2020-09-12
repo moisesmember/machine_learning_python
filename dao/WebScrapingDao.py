@@ -26,3 +26,9 @@ class WebScrapingDao:
         db_megasenna = WebScrapingDao() # Instância Objeto da Classe
         connected = db_megasenna.connection() # Realiza a conexão com o MongoDB
         return connected.find({})
+
+    def deleteAll(self):
+        client = pymongo.MongoClient("localhost", 27017) # 172.0.0.1
+        db = client.MegaSenna # Nome do Banco e da Coleção
+        db.historicoJogos.delete_many({})
+        #db.historicoJogos.delete_one({})

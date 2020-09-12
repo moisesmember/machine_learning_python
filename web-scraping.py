@@ -5,6 +5,10 @@ import requests
 from dao.WebScrapingDao import WebScrapingDao # Importação da classe Dao com MongoDB
 import json # Importação do Módulo JSON para criação do arquivo
 
+# BLOCO DE INSTÂNCIA DO MONGODB    
+megaSenna = WebScrapingDao()
+megaSenna.deleteAll()  # Exclui todos os dados existentes
+
 # pegando todo o conteúdo de um requisição get na url 
 html = requests.get("https://www.resultadosmegasena.com.br/resultados-anteriores").content
 soup = BeautifulSoup(html, 'html.parser')
@@ -43,11 +47,8 @@ for index in range(len(data)):
     
     mesa_senna['dezenas_sorteadas']=dezenas 
 
-    # BLOCO DE INSERÇÃO AO MONGODB    
-    megaSenna = WebScrapingDao()
-    megaSenna.salvarMegaSenna(mesa_senna)
+    megaSenna.salvarMegaSenna(mesa_senna) # Insere no MongoDB
     
-
     # Criação do Arquivo em JSON
     with open('data/megasenna_historico.json', 'a', encoding='utf-8') as f:
         json.dump(mesa_senna, f, ensure_ascii=False, indent=4)

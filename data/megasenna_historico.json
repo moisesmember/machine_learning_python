@@ -1,4 +1,17 @@
 {
+    "data_sorteio": "9/09/2020",
+    "cd_sorteio": "2297",
+    "ganhadores": "0",
+    "premio": "2502037.00",
+    "dezenas_sorteadas": [
+        20,
+        22,
+        35,
+        40,
+        41,
+        59
+    ]
+}{
     "data_sorteio": "5/09/2020",
     "cd_sorteio": "2296",
     "ganhadores": "2",
@@ -3884,18 +3897,5 @@
         24,
         40,
         56
-    ]
-}{
-    "data_sorteio": "9/12/2017",
-    "cd_sorteio": "1995",
-    "ganhadores": "0",
-    "premio": "27983241.00",
-    "dezenas_sorteadas": [
-        14,
-        26,
-        29,
-        35,
-        37,
-        39
     ]
 }
