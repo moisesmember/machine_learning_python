@@ -1,5 +1,6 @@
 # Importanto as bibliotecas BeautifulSoup e requests nas duas primeiras linhas
 from bs4 import BeautifulSoup 
+from random import shuffle
 from dao.WebScrapingDao import WebScrapingDao # Importação da classe Dao com MongoDB
 import requests
 import os.path
@@ -45,7 +46,7 @@ if(os.path.exists('data/megasenna_historico.json')):
     
     mesa_senna['dezenas_sorteadas']=dezenas 
 
-    #megaSenna.salvarMegaSenna(mesa_senna) # Insere no MongoDB
+    megaSenna.salvarMegaSenna(mesa_senna) # Insere no MongoDB
     
     # Criação do Arquivo em JSON
     with open('data/megasenna_historico.json', 'a', encoding='utf-8') as f:

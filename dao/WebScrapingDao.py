@@ -4,13 +4,13 @@ import json
 class WebScrapingDao:
 
     def connection(self):
-        myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+        myclient = pymongo.MongoClient("mongodb://10.51.19.55:27017/") #mongodb://localhost:27017/
         mydb = myclient["MegaSenna"] # Banco de Dados
         mycol = mydb["historicoJogos"]       # Collection
         return mycol
 
     def salvarMegaSenna(self, data):        
-        client = pymongo.MongoClient("localhost", 27017) # 172.0.0.1
+        client = pymongo.MongoClient("10.51.19.55", 27017) # localhost
         db = client.MegaSenna # Nome do Banco e da Coleção
         #db.tweetData.insert_one(data)
         print(dict(data))
