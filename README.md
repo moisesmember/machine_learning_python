@@ -27,6 +27,8 @@ Após a extração através da técnica de Ciência de Dados Web-Scraping, os da
 
 ### Referência utilizada
 <a href="https://blog.geekhunter.com.br/como-fazer-um-web-scraping-python/">Fonte utilizada para elaboração</a>
+
 <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Sobre a biblioteca BeautifulSoup</a>
+
 <a href="https://pythonbasics.org/pandas-json/">JSON with Python Pandas</a>
 
