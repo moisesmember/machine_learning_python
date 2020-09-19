@@ -17,7 +17,7 @@
 <p>O Objetivo desse projeto é extrair o histórico de resultados da Mega-Senna afim de realizar treinamentos através de técnicas em 
   Machine Learning para descoberta de possíveis padrões
 </p>
-<a href="https://www.resultadosmegasena.com.br/resultados-anteriores">link - fonte do datasets (extração via WEB SCRAPING)</a>
+<a href="https://www.resultadosmegasena.com.br/resultados-anteriores" target="_blank">link - fonte do datasets (extração via WEB SCRAPING)</a>
 
 ### Extração
 <p>
@@ -26,9 +26,9 @@ Após a extração através da técnica de Ciência de Dados Web-Scraping, os da
 </p>
 
 ### Referência utilizada
-<a href="https://blog.geekhunter.com.br/como-fazer-um-web-scraping-python/">Fonte utilizada para elaboração</a>
+<a href="https://blog.geekhunter.com.br/como-fazer-um-web-scraping-python/" target="_blank">Fonte utilizada para elaboração</a>
 
-<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Sobre a biblioteca BeautifulSoup</a>
+<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Sobre a biblioteca BeautifulSoup</a>
 
-<a href="https://pythonbasics.org/pandas-json/">JSON with Python Pandas</a>
+<a href="https://pythonbasics.org/pandas-json/" target="_blank">JSON with Python Pandas</a>
 
