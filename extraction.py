@@ -51,14 +51,30 @@ for index in range(len(data)):
     # ----------------------------------------------------------------
 # ------------------------------------------------------------------
 
-with open('data/megasenna.csv', 'w', newline='') as csvfile:
-    fieldnames = ['data_sorteio', 'cd_sorteio', 'ganhadores', 'premio', 'dezenas_sorteadas']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    for i in range(len(jogos.keys())):
-        print(jogos[i])   
-        writer.writerow(jogos[i]) 
-        #writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
+# Verifica se o Arquivo existe
+if(os.path.exists('data/megasenna_historico.json')):
+    print('Existe arquivo')
+
+    with open('data/megasenna.csv', 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            #print(row)
+            #print(row[4]) # jogos
+            #print(str(row[0]))
+            if(str(row[0]) == '29/01/2020'):
+                print('ENCOTRADO')
+
+else:
+    print('Não existe arquivo')
+
+    with open('data/megasenna.csv', 'w', newline='') as csvfile:
+        fieldnames = ['data_sorteio', 'cd_sorteio', 'ganhadores', 'premio', 'dezenas_sorteadas']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for i in range(len(jogos.keys())):
+            print(jogos[i])   
+            writer.writerow(jogos[i]) 
+            #writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
 
 
 
