@@ -63,6 +63,12 @@ if(os.path.exists('data/megasenna_historico.json')):
             #print(str(row[0]))
             if(str(row[0]) == '29/01/2020'):
                 print('ENCOTRADO')
+                with open('data/megasenna.csv', 'a', newline='') as csvfile:
+                    fieldnames = ['data_sorteio', 'cd_sorteio', 'ganhadores', 'premio', 'dezenas_sorteadas']
+                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                    #writer.writeheader()                    
+                    print(jogos[0])   
+                    writer.writerow(jogos[0]) 
 
 else:
     print('Não existe arquivo')

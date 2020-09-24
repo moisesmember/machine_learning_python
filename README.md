@@ -32,3 +32,5 @@ Após a extração através da técnica de Ciência de Dados Web-Scraping, os da
 
 <a href="https://pythonbasics.org/pandas-json/" target="_blank">JSON with Python Pandas</a>
 
+<a href="https://medium.com/data-hackers/escrita-e-leitura-de-arquivos-csv-em-python-6a256c608818">CSV em Python</a>
+
